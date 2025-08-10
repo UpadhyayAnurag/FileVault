@@ -1,0 +1,315 @@
+/* Modern File Vault CSS Styles - Clean Light Theme */
+
+/* Root variables for consistent theming */
+.root {
+    -fx-primary-color: #f8f9fa;
+    -fx-secondary-color: #e9ecef;
+    -fx-accent-color: #dc3545;
+    -fx-success-color: #28a745;
+    -fx-error-color: #dc3545;
+    -fx-warning-color: #ffc107;
+    -fx-text-primary: #212529;
+    -fx-text-secondary: #6c757d;
+    -fx-text-light: #495057;
+    -fx-surface-color: #ffffff;
+    -fx-surface-hover: #f8f9fa;
+    -fx-border-radius: 25px;
+    -fx-shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Main container with clean light background */
+.main-container {
+    -fx-background-color: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 50%, #dee2e6 100%);
+    -fx-background-radius: 20px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 20, 0, 0, 5);
+    -fx-border-color: rgba(0, 0, 0, 0.05);
+    -fx-border-width: 1px;
+    -fx-border-radius: 20px;
+}
+
+/* Title styling with dark text */
+.title-label {
+    -fx-font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    -fx-font-size: 48px;
+    -fx-font-weight: 300;
+    -fx-text-fill: #6c757d;
+    -fx-letter-spacing: 2px;
+}
+
+/* Subtitle styling */
+.subtitle-label {
+    -fx-font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    -fx-font-size: 16px;
+    -fx-text-fill: #6c757d;
+    -fx-font-weight: normal;
+    -fx-letter-spacing: 0.5px;
+}
+
+/* Section label styling */
+.section-label {
+    -fx-font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    -fx-font-size: 18px;
+    -fx-font-weight: 500;
+    -fx-text-fill: #495057;
+    -fx-letter-spacing: 0.5px;
+}
+
+/* File selection button with red outline */
+.file-button {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #495057;
+    -fx-font-size: 16px;
+    -fx-font-weight: 500;
+    -fx-padding: 15px 30px;
+    -fx-background-radius: 25px;
+    -fx-border-radius: 25px;
+    -fx-border-color: #dc3545;
+    -fx-border-width: 2px;
+    -fx-effect: dropshadow(gaussian, rgba(220, 53, 69, 0.2), 8, 0, 0, 2);
+    -fx-cursor: hand;
+    -fx-min-width: 180px;
+}
+
+.file-button:hover {
+    -fx-background-color: #f8f9fa;
+    -fx-effect: dropshadow(gaussian, rgba(220, 53, 69, 0.3), 12, 0, 0, 4);
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+}
+
+.file-button:pressed {
+    -fx-background-color: #e9ecef;
+    -fx-effect: dropshadow(gaussian, rgba(220, 53, 69, 0.15), 5, 0, 0, 1);
+    -fx-scale-x: 0.98;
+    -fx-scale-y: 0.98;
+}
+
+/* File info labels */
+.file-info-label {
+    -fx-font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    -fx-font-size: 14px;
+    -fx-text-fill: #6c757d;
+    -fx-text-alignment: center;
+    -fx-font-style: normal;
+}
+
+.file-selected-label {
+    -fx-font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    -fx-font-size: 14px;
+    -fx-text-fill: #28a745;
+    -fx-font-weight: 500;
+    -fx-text-alignment: center;
+}
+
+/* Encryption key field with red outline */
+.key-field {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 25px;
+    -fx-border-color: #dc3545;
+    -fx-border-width: 2px;
+    -fx-border-radius: 25px;
+    -fx-padding: 15px 20px;
+    -fx-font-size: 16px;
+    -fx-text-fill: #495057;
+    -fx-prompt-text-fill: #6c757d;
+    -fx-effect: dropshadow(gaussian, rgba(220, 53, 69, 0.1), 8, 0, 0, 2);
+}
+
+.key-field:focused {
+    -fx-border-color: #dc3545;
+    -fx-border-width: 3px;
+    -fx-effect: dropshadow(gaussian, rgba(220, 53, 69, 0.3), 12, 0, 0, 4);
+}
+
+/* Encrypt button with green glow effect */
+.encrypt-button {
+    -fx-background-color: #10b981;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 16px;
+    -fx-font-weight: 600;
+    -fx-padding: 15px 25px;
+    -fx-background-radius: 25px;
+    -fx-border-radius: 25px;
+    -fx-border-color: #ffffff;
+    -fx-border-width: 2px;
+    -fx-effect: dropshadow(gaussian, rgba(16, 185, 129, 0.6), 20, 0, 0, 0);
+    -fx-cursor: hand;
+    -fx-min-width: 120px;
+}
+
+.encrypt-button:hover {
+    -fx-background-color: #059669;
+    -fx-effect: dropshadow(gaussian, rgba(16, 185, 129, 0.8), 25, 0, 0, 0);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+.encrypt-button:pressed {
+    -fx-background-color: #047857;
+    -fx-effect: dropshadow(gaussian, rgba(16, 185, 129, 0.5), 15, 0, 0, 0);
+    -fx-scale-x: 0.98;
+    -fx-scale-y: 0.98;
+}
+
+/* Decrypt button with red glow effect */
+.decrypt-button {
+    -fx-background-color: #ef4444;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 16px;
+    -fx-font-weight: 600;
+    -fx-padding: 15px 25px;
+    -fx-background-radius: 25px;
+    -fx-border-radius: 25px;
+    -fx-border-color: #ffffff;
+    -fx-border-width: 2px;
+    -fx-effect: dropshadow(gaussian, rgba(239, 68, 68, 0.6), 20, 0, 0, 0);
+    -fx-cursor: hand;
+    -fx-min-width: 120px;
+}
+
+.decrypt-button:hover {
+    -fx-background-color: #dc2626;
+    -fx-effect: dropshadow(gaussian, rgba(239, 68, 68, 0.8), 25, 0, 0, 0);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+.decrypt-button:pressed {
+    -fx-background-color: #b91c1c;
+    -fx-effect: dropshadow(gaussian, rgba(239, 68, 68, 0.5), 15, 0, 0, 0);
+    -fx-scale-x: 0.98;
+    -fx-scale-y: 0.98;
+}
+
+/* Status labels with clean styling */
+.status-ready {
+    -fx-font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    -fx-font-size: 16px;
+    -fx-text-fill: #495057;
+    -fx-font-weight: normal;
+    -fx-background-color: #e9ecef;
+    -fx-background-radius: 20px;
+    -fx-padding: 12px 20px;
+    -fx-border-color: #dee2e6;
+    -fx-border-width: 1px;
+    -fx-border-radius: 20px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.05), 5, 0, 0, 1);
+}
+
+.status-info {
+    -fx-font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    -fx-font-size: 16px;
+    -fx-text-fill: #17a2b8;
+    -fx-font-weight: 500;
+    -fx-background-color: rgba(23, 162, 184, 0.1);
+    -fx-background-radius: 20px;
+    -fx-padding: 12px 20px;
+    -fx-border-color: rgba(23, 162, 184, 0.3);
+    -fx-border-width: 1px;
+    -fx-border-radius: 20px;
+    -fx-effect: dropshadow(gaussian, rgba(23, 162, 184, 0.2), 8, 0, 0, 2);
+}
+
+.status-working {
+    -fx-font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    -fx-font-size: 16px;
+    -fx-text-fill: #ffc107;
+    -fx-font-weight: 500;
+    -fx-background-color: rgba(255, 193, 7, 0.1);
+    -fx-background-radius: 20px;
+    -fx-padding: 12px 20px;
+    -fx-border-color: rgba(255, 193, 7, 0.3);
+    -fx-border-width: 1px;
+    -fx-border-radius: 20px;
+    -fx-effect: dropshadow(gaussian, rgba(255, 193, 7, 0.2), 8, 0, 0, 2);
+}
+
+.status-success {
+    -fx-font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    -fx-font-size: 16px;
+    -fx-text-fill: #28a745;
+    -fx-font-weight: 500;
+    -fx-background-color: rgba(40, 167, 69, 0.1);
+    -fx-background-radius: 20px;
+    -fx-padding: 12px 20px;
+    -fx-border-color: rgba(40, 167, 69, 0.3);
+    -fx-border-width: 1px;
+    -fx-border-radius: 20px;
+    -fx-effect: dropshadow(gaussian, rgba(40, 167, 69, 0.2), 8, 0, 0, 2);
+}
+
+.status-error {
+    -fx-font-family: "Segoe UI", "Helveticaने", Arial, sans-serif;
+    -fx-font-size: 16px;
+    -fx-text-fill: #dc3545;
+    -fx-font-weight: 500;
+    -fx-background-color: rgba(220, 53, 69, 0.1);
+    -fx-background-radius: 20px;
+    -fx-padding: 12px 20px;
+    -fx-border-color: rgba(220, 53, 69, 0.3);
+    -fx-border-width: 1px;
+    -fx-border-radius: 20px;
+    -fx-effect: dropshadow(gaussian, rgba(220, 53, 69, 0.2), 8, 0, 0, 2);
+}
+
+/* Scrollbar customization */
+.scroll-bar {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar .track {
+    -fx-background-color: rgba(0, 0, 0, 0.05);
+    -fx-background-radius: 5px;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: rgba(0, 0, 0, 0.2);
+    -fx-background-radius: 5px;
+}
+
+.scroll-bar .thumb:hover {
+    -fx-background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Tooltip styling */
+.tooltip {
+    -fx-background-color: rgba(0, 0, 0, 0.8);
+    -fx-text-fill: white;
+    -fx-background-radius: 8px;
+    -fx-font-size: 12px;
+    -fx-padding: 8px 12px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 8, 0, 0, 2);
+}
+
+/* Focus indicators */
+.button:focused {
+    -fx-border-color: #007bff;
+    -fx-border-width: 2px;
+    -fx-border-style: solid;
+}
+
+.text-field:focused {
+    -fx-border-color: #dc3545;
+    -fx-border-width: 3px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .title-label {
+        -fx-font-size: 36px;
+    }
+
+    .subtitle-label {
+        -fx-font-size: 14px;
+    }
+
+    .file-button {
+        -fx-min-width: 150px;
+        -fx-padding: 12px 25px;
+    }
+
+    .encrypt-button, .decrypt-button {
+        -fx-min-width: 100px;
+        -fx-padding: 12px 20px;
+    }
+}
